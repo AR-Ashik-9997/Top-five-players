@@ -2,3 +2,7 @@
 .text-justify{
     text-align: justify;
 }
+
+.square-dot{
+    list-style-type: square;
+}
