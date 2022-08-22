@@ -8,7 +8,7 @@ document.getElementById("calculate").addEventListener("click", function () {
     cheackInput === true &&
     checkArray === true &&
     isNaN(perPlayerCost) === false &&
-    perPlayerCost > 0 &&
+    perPlayerCost >= 0 &&
     selectedPlayer.length > 0
   ) {
     const playerExpeneses = parseFloat(
@@ -33,8 +33,8 @@ document
       cheackManagerInput === true &&
       checkCoachInput === true &&
       isNaN(managerCost) === false &&
-      managerCost > 0 &&
-      coachCost > 0
+      managerCost >= 0 &&
+      coachCost >= 0
     ) {
       const totalCalculate = parseFloat(
         (totalPlayerExpenses + managerCost + coachCost).toFixed(2)
