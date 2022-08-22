@@ -15,19 +15,30 @@
     <!-- custome stylesheet -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
+  <body class="bg-color">
     <header>
       <section>
         <div class="container-fluid bg-black">
           <div class="row">
-            <div class="col-md-4 p-0">
+            <div class="col-lg-4 col-md-12 col-sm-12 p-0">
               <img src="images/bg-player.jpg" alt="" class="img-fluid" />
             </div>
-            <div class="col-md-4">
-              <div class="mt-5">
-                <h1 class="text-info fw-bold display-4 mb-4">
+            <div class="col-lg-4 col-md-12 col-sm-12 d-md-flex justify-content-center">
+              <div class="mt-5 d-md-none d-lg-block d-sm-block">
+                <h2 class="text-info fw-bold display-3 mb-4 text-center title-font">
                   Select the top five players of your choice
-                </h1>
+                </h2>
+                <p class="text-white fs-5 text-justify">
+                  "Juggling the ball 1000 times is not a skill, anyone can do it
+                  with practice, then they can work in a circus too. The real
+                  skill is to pass the ball with one touch, and put it on the
+                  teammate's right foot."<strong>Johan Cruyff</strong>
+                </p>
+              </div>
+              <div class="mt-5 w-75 d-none d-md-block d-lg-none">
+                <h2 class="text-info fw-bold display-5 mb-4 text-center title-font">
+                  Select the top five players of your choice
+                </h2>
                 <p class="text-white fs-5 text-justify">
                   "Juggling the ball 1000 times is not a skill, anyone can do it
                   with practice, then they can work in a circus too. The real
@@ -36,7 +47,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 d-md-none d-none d-lg-block">
               <img src="images/bg-playe-2.jpg" alt="" class="img-fluid" />
             </div>
           </div>
@@ -46,18 +57,18 @@
     <main>
       <section class="mt-5 pt-5 mb-5">
         <div class="container">
-          <div class="row g-4">
-            <div class="col-md-9">
-              <div class="row g-4">
-                <div class="col-md-4">
-                  <div class="card">
+          <div class="row g-4 d-md-flex justify-content-center">
+            <div class="col-lg-9 col-md-9 col-sm-12">
+              <div class="row g-4 d-md-flex justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <img
                       src="images/oscar.jpg"
                       class="card-img-top card-img"
                       alt="oscar"
                     />
                     <div class="card-body">
-                      <h2 class="card-title text-center">Oscar</h2>
+                      <h2 class="card-title text-center fw-bold">Oscar</h2>
                       <div class="d-flex justify-content-center fs-5">
                         <p>36 Goals</p>
                         <ul class="square-dot">
@@ -72,15 +83,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <img
                       src="images/Graziano Pelle.jpg"
                       class="card-img-top card-img"
                       alt="Graziano Pelle"
                     />
                     <div class="card-body">
-                      <h2 class="card-title text-center">Graziano Pelle</h2>
+                      <h2 class="card-title text-center fw-bold">Graziano Pelle</h2>
                       <div class="d-flex justify-content-center fs-5">
                         <p>36 Goals</p>
                         <ul class="square-dot">
@@ -88,22 +99,22 @@
                         </ul>
                       </div>
                       <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary bt-lg w-75" id="select-2" onclick="addToSelect(this)">
+                        <button class="btn btn-primary bt-lg w-75 fw-bold" id="select-2" onclick="addToSelect(this)">
                           SELECT
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <img
                       src="images/messy.jpg"
                       class="card-img-top card-img"
                       alt="Lionel Messy"
                     />
                     <div class="card-body">
-                      <h2 class="card-title text-center">Lionel Messy</h2>
+                      <h2 class="card-title text-center fw-bold">Lionel Messy</h2>
                       <div class="d-flex justify-content-center fs-5">
                         <p>36 Goals</p>
                         <ul class="square-dot">
@@ -111,22 +122,22 @@
                         </ul>
                       </div>
                       <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary bt-lg w-75" id="select-3" onclick="addToSelect(this)">
+                        <button class="btn btn-primary bt-lg w-75 fw-bold" id="select-3" onclick="addToSelect(this)">
                           SELECT
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <img
                       src="images/Sergio Ramos.jpg"
                       class="card-img-top card-img"
                       alt="Sergio Ramos"
                     />
                     <div class="card-body">
-                      <h2 class="card-title text-center">Sergio Ramos</h2>
+                      <h2 class="card-title text-center fw-bold">Sergio Ramos</h2>
                       <div class="d-flex justify-content-center fs-5">
                         <p>36 Goals</p>
                         <ul class="square-dot">
@@ -134,22 +145,22 @@
                         </ul>
                       </div>
                       <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary bt-lg w-75" id="select-4" onclick="addToSelect(this)">
+                        <button class="btn btn-primary bt-lg w-75 fw-bold" id="select-4" onclick="addToSelect(this)">
                           SELECT
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <img
                       src="images/Robert Lewandowski.jpg"
                       class="card-img-top card-img"
                       alt="Robert Lewandowski"
                     />
                     <div class="card-body">
-                      <h2 class="card-title text-center">Robert Lewy</h2>
+                      <h2 class="card-title text-center fw-bold">Robert Lewy</h2>
                       <div class="d-flex justify-content-center fs-5">
                         <p>36 Goals</p>
                         <ul class="square-dot">
@@ -157,22 +168,22 @@
                         </ul>
                       </div>
                       <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary bt-lg w-75" id="select-5" onclick="addToSelect(this)">
+                        <button class="btn btn-primary bt-lg w-75 fw-bold" id="select-5" onclick="addToSelect(this)">
                           SELECT
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <img
                       src="images/naymer.jpg"
                       class="card-img-top card-img"
                       alt="Neymar Jr"
                     />
                     <div class="card-body">
-                      <h2 class="card-title text-center">Neymar Jr</h2>
+                      <h2 class="card-title text-center fw-bold">Neymar Jr</h2>
                       <div class="d-flex justify-content-center fs-5">
                         <p>36 Goals</p>
                         <ul class="square-dot">
@@ -180,22 +191,22 @@
                         </ul>
                       </div>
                       <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary bt-lg w-75" id="select-6" onclick="addToSelect(this)">
+                        <button class="btn btn-primary bt-lg w-75 fw-bold" id="select-6" onclick="addToSelect(this)">
                           SELECT
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <img
                       src="images/ozli.jpg"
                       class="card-img-top card-img"
                       alt="Ozli"
                     />
                     <div class="card-body">
-                      <h2 class="card-title text-center">Mesut Özil</h2>
+                      <h2 class="card-title text-center fw-bold">Mesut Özil</h2>
                       <div class="d-flex justify-content-center fs-5">
                         <p>36 Goals</p>
                         <ul class="square-dot">
@@ -203,22 +214,22 @@
                         </ul>
                       </div>
                       <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary bt-lg w-75" id="select-7" onclick="addToSelect(this)">
+                        <button class="btn btn-primary bt-lg w-75 fw-bold" id="select-7" onclick="addToSelect(this)">
                           SELECT
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <img
                       src="images/Renato Sanches.jpg"
                       class="card-img-top card-img"
                       alt="Renato Sanches"
                     />
                     <div class="card-body">
-                      <h2 class="card-title text-center">Renato Sanches</h2>
+                      <h2 class="card-title text-center fw-bold">Renato Sanches</h2>
                       <div class="d-flex justify-content-center fs-5">
                         <p>36 Goals</p>
                         <ul class="square-dot">
@@ -226,22 +237,22 @@
                         </ul>
                       </div>
                       <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary bt-lg w-75" id="select-8" onclick="addToSelect(this)">
+                        <button class="btn btn-primary bt-lg w-75 fw-bold" id="select-8" onclick="addToSelect(this)">
                           SELECT
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <img
                       src="images/ronaldo.jpg"
                       class="card-img-top card-img"
                       alt="cristiano ronaldo"
                     />
                     <div class="card-body">
-                      <h2 class="card-title text-center">Cristiano Ronaldo</h2>
+                      <h2 class="card-title text-center fw-bold">Cristiano Ronaldo</h2>
                       <div class="d-flex justify-content-center fs-5">
                         <p>36 Goals</p>
                         <ul class="square-dot">
@@ -249,7 +260,7 @@
                         </ul>
                       </div>
                       <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary bt-lg w-75" id="select-9" onclick="addToSelect(this)">
+                        <button class="btn btn-primary bt-lg w-75 fw-bold" id="select-9" onclick="addToSelect(this)">
                           SELECT
                         </button>
                       </div>
@@ -259,10 +270,10 @@
               </div>
             </div>
 
-            <div class="col-md-3">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="card">
+            <div class="col-lg-3 col-md-9 col-sm-12">
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-12 col-md-9 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <h2 class="text-center mt-2">Selected-V</h2>
                     <div class="card-body">
                       <table>
@@ -274,15 +285,15 @@
                   </div>
                 </div>
               </div>
-              <div class="row mt-5">
-                <div class="col-md-12">
-                  <div class="card">
+              <div class="row mt-5 d-flex justify-content-center">
+                <div class="col-lg-12 col-md-9 col-sm-12">
+                  <div class="card bg-color text-white border-white">
                     <h2 class="text-center mt-2">Budget</h2>
                     <div class="card-body">
-                      <label for="per player" class="fw-bold">Per Player</label>
+                      <label for="per player" class="fw-bold ">Per Player</label>
                       <input type="text" name="" id="player-field" class="float-end" />
                       <div class="mt-4 d-flex justify-content-end mb-3">
-                        <button class="btn btn-primary bt-lg w-75 fw-bold fs-5" id="calculate">
+                        <button class="btn btn-primary bt-lg w-auto fw-bold fs-5" id="calculate">
                           Calculate
                         </button>
                       </div>
@@ -298,13 +309,13 @@
                       <label for="coach" class="fw-bold">Coach</label>
                       <input type="text" name="" id="coach-field" class="float-end" />
                       <div class="mt-4 d-flex justify-content-end mb-3">
-                        <button id="total-calculate" class="btn btn-primary bt-lg w-75 fw-bold fs-5">
+                        <button id="total-calculate" class="btn btn-primary bt-lg w-auto fw-bold fs-5">
                           Calculate Total
                         </button>
                       </div>
                       <p class="p-2 fs-5 fw-bold">
                         Total
-                        <span class="float-end"
+                        <span class="float-end text-info"
                           ><span>$</span><span id="total-result">0</span></span
                         >
                       </p>

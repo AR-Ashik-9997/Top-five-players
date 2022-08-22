@@ -1,5 +1,15 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Yrsa:ital@1&display=swap');
+
+.bg-color{
+  background-color: #002736;
+}
 .text-justify {
   text-align: justify;
+}
+.title-font{
+  font-family: 'Lobster', cursive;
+  font-family: 'Yrsa', serif;
 }
 
 .square-dot {

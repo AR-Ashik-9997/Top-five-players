@@ -2,12 +2,14 @@ const selectPlayerArray = [];
 const numberofPlayer = [];
 function addToSelect(element) {
   const selectedPlayer = element.parentNode.parentNode.children[0].innerText;
-  const playaer = {
+  const playaers = {
     selectedPlayer: selectedPlayer,
   };
-  selectPlayerArray.push(playaer);
+  selectPlayerArray.push(playaers);
   displaySelectedPlayer();
-  document.getElementById(element.id).disabled = true;
+  if (selectPlayerArray.length <= 5) {
+    document.getElementById(element.id).disabled = true;
+  }
 }
 
 function displaySelectedPlayer() {
@@ -30,7 +32,7 @@ function displaySelectedPlayer() {
   }
 }
 
-function removeDuplicate(array) {
+function removeDuplicateNumberOfPlayer(array) {
   let unique = [];
   for (let i = 0; i < array.length; i++) {
     if (unique.indexOf(array[i]) === -1) {
