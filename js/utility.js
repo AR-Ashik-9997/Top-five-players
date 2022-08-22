@@ -1,12 +1,22 @@
 const selectPlayerArray = [];
 const numberofPlayer = [];
+function addToSelect(element) {
+  const selectedPlayer = element.parentNode.parentNode.children[0].innerText;
+  const playaer = {
+    selectedPlayer: selectedPlayer,
+  };
+  selectPlayerArray.push(playaer);
+  displaySelectedPlayer();
+  document.getElementById(element.id).disabled = true;
+}
+
 function displaySelectedPlayer() {
   const table = document.getElementById("table-body");
   table.textContent = "";
 
   for (let i = 0; i < selectPlayerArray.length; i++) {
     if (i >= 5) {
-      alert("vag");
+      alert("Selected list is full");
       break;
     } else {
       numberofPlayer.push(i + 1);
@@ -19,6 +29,7 @@ function displaySelectedPlayer() {
     }
   }
 }
+
 function removeDuplicate(array) {
   let unique = [];
   for (let i = 0; i < array.length; i++) {
@@ -27,6 +38,22 @@ function removeDuplicate(array) {
     }
   }
   return unique;
+}
+
+function checkInputField(inputField) {
+  if (typeof inputField != "object") {
+    if (isNaN(inputField) === true) {
+      alert("Please provide the Number");
+    }
+    if (inputField < 0) {
+      alert("Please provide the positive Number");
+    }
+  } else {
+    if (inputField.length === 0) {
+      alert("plese selecet the players more than five");
+    }
+  }
+  return true;
 }
 
 function setTextElementById(elementId, newValue) {

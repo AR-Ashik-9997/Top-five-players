@@ -1,35 +1,26 @@
-function addToSelect(element) {
-  const selectedPlayer = element.parentNode.parentNode.children[0].innerText;
-  const playaer = {
-    selectedPlayer: selectedPlayer,
-  };
-
-  selectPlayerArray.push(playaer);
-  displaySelectedPlayer();
-  document.getElementById(element.id).disabled = true;
-}
-
 document.getElementById("calculate").addEventListener("click", function () {
   const playerField = document.getElementById("player-field");
   const perPlayerCost = parseFloat(playerField.value);
   const selectedPlayer = removeDuplicate(numberofPlayer);
-  if(isNaN(perPlayerCost)===false &&typeof perPlayerCost==='number'&& perPlayerCost>=0 && selectedPlayer.length>0){
-    const playerExpeneses = (perPlayerCost*selectedPlayer.length);
-    setTextElementById('player-expense',playerExpeneses);   
-  }
-  else{
-    if(isNaN(perPlayerCost)===true){
-      alert('Please provide the Number of per player field');
-    }
-    if(selectedPlayer.length===0){
-      alert('plese selecet the players');
-    }
-    if(perPlayerCost<0){
-      alert('Please provide the positive Number of per player field');
-    }
+  const cheackInput = checkInputField(perPlayerCost);
+  const checkArray = checkInputField(selectedPlayer);
+  if (cheackInput === true && checkArray === true&&isNaN(perPlayerCost)===false&&perPlayerCost>0&&selectedPlayer.length>0) {
+    const playerExpeneses = parseFloat((perPlayerCost * selectedPlayer.length).toFixed(2));
+    setTextElementById("player-expenses", playerExpeneses);
   }
 });
 
-document.getElementById('totla-calculate').addEventListener('click',function(){
-  
-})
+document.getElementById("total-calculate").addEventListener("click", function () {
+    const managerField = document.getElementById("manager-field");
+    const coachField = document.getElementById("coach-field");
+    const playerExpenses = document.getElementById('player-expenses');
+    const totalPlayerExpenses = parseFloat(playerExpenses.innerText);
+    const managerCost = parseFloat(managerField.value);
+    const coachCost = parseFloat(coachField.value);
+    const cheackManagerInput = checkInputField(managerCost);
+    const checkCoachInput = checkInputField(coachCost);
+    if(cheackManagerInput===true&&checkCoachInput===true&&isNaN(managerCost)===false&&managerCost>0&&coachCost>0){
+      const totalCalculate = parseFloat((totalPlayerExpenses+managerCost+coachCost).toFixed(2));
+      setTextElementById("total-result", totalCalculate);
+    }
+  });
