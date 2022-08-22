@@ -280,25 +280,25 @@
                     <h2 class="text-center mt-2">Budget</h2>
                     <div class="card-body">
                       <label for="per player" class="fw-bold">Per Player</label>
-                      <input type="text" name="" id="" class="float-end" />
+                      <input type="text" name="" id="player-field" class="float-end" />
                       <div class="mt-4 d-flex justify-content-end mb-3">
-                        <button class="btn btn-primary bt-lg w-75 fw-bold fs-5">
+                        <button class="btn btn-primary bt-lg w-75 fw-bold fs-5" id="calculate">
                           Calculate
                         </button>
                       </div>
                       <p class="p-2 fs-5 fw-bold">
                         Player Expenses
                         <span class="float-end"
-                          ><span>$</span><span>0</span></span
+                          ><span>$</span><span id="player-expense">0</span></span
                         >
                       </p>
                       <label for="manager" class="fw-bold">Manager</label>
-                      <input type="text" name="" id="" class="float-end" />
+                      <input type="text" name="" id="manager-field" class="float-end" />
                       <br /><br />
                       <label for="coach" class="fw-bold">Coach</label>
-                      <input type="text" name="" id="" class="float-end" />
+                      <input type="text" name="" id="coach-field" class="float-end" />
                       <div class="mt-4 d-flex justify-content-end mb-3">
-                        <button class="btn btn-primary bt-lg w-75 fw-bold fs-5">
+                        <button id="tottal-calculate" class="btn btn-primary bt-lg w-75 fw-bold fs-5">
                           Calculate Total
                         </button>
                       </div>
@@ -323,6 +323,7 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
+    <script src="js/utility.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
